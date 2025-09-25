@@ -37,6 +37,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cc {
+            bindings = <&kp LC(C)>;
+            key-positions = <13 14 15>;
+        };
+
+        cv {
+            bindings = <&kp LC(V)>;
+            key-positions = <13 14 15 4>;
+        };
+
+        asdf {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20 21 22>;
+        };
+
+        asdfcf {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <13 14 15 16>;
+        };
+
+        asfasfdasd {
+            bindings = <&kp LC(A)>;
+            key-positions = <24 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,10 +78,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE     &kp Q                &kp W            &kp E            &kp R  &kp T             &kp Y      &kp U      &kp I                 &kp O             &kp P                         &kp BSPC
-&kp DEL        &HML LEFT_CONTROL A  &HML LEFT_ALT S  &HML LEFT_WIN D  &kp F  &kp G             &kp H      &kp J      &HMR LEFT_GUI K       &HMR RIGHT_ALT L  &HMR RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp BACKSLASH  &kp Z                &kp X            &kp C            &kp V  &kp B             &kp N      &kp M      &kp COMMA             &kp DOT           &kp FSLH                      &kp ENTER
-                                                     &HML PLUS EQUAL  &mo 1  &kp LEFT_SHIFT    &kp SPACE  &lt 2 TAB  &HMR LS(MINUS) MINUS
+&kp ESCAPE        &kp Q  &kp W  &kp E         &kp R        &kp T    &kp Y  &kp U        &kp I      &kp O    &kp P                         &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F        &kp G    &kp H  &kp J        &kp K      &kp L    &HMR RIGHT_CONTROL SEMICOLON  &kp ENTER
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp B    &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH                      &kp ENTER
+                                &kp LEFT_GUI  &lt 1 SPACE  &mo 1    &mo 1  &lt 1 SPACE  &mo 2
             >;
         };
 
@@ -65,10 +94,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp KP_MULTIPLY       &kp MINUS      &mt AMPERSAND N7          &mt ASTERISK N8       &mt LEFT_PARENTHESIS N9  &kp PLUS          &kp LS(LEFT_BRACKET)      &kp LS(RIGHT_BRACKET)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp SLASH             &kp BACKSPACE  &mt DOLLAR NUMBER_4       &mt PERCENT N5        &mt CARET NUMBER_6       &kp ENTER         &kp LS(LC(LG(LEFT_ALT)))  &kp LEFT               &kp DOWN              &kp UP_ARROW           &kp RIGHT_ARROW   &kp DOLLAR
-&kp NON_US_BACKSLASH  &kp N0         &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &kp PERIOD        &kp LA(LS(MINUS))         &kp LS(LC(TAB))        &kp PAGE_DOWN         &kp PG_UP              &kp LC(TAB)       &kp TILDE
-                                                               &kp TILDE             &kp SPACE                &kp LEFT_SHIFT    &kp SPACE                 &kp LG(LS(LEFT))       &kp LS(LG(RIGHT))
+&kp KP_MULTIPLY       &kp MINUS     &mt AMPERSAND N7          &mt ASTERISK N8       &mt LEFT_PARENTHESIS N9  &kp PLUS          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp SLASH             &kp NUMBER_1  &kp NUMBER_2              &kp NUMBER_3          &kp NUMBER_4             &kp N5            &kp NUMBER_6          &kp N7                 &kp N8                &kp N9                 &kp N0            &kp DOLLAR
+&kp NON_US_BACKSLASH  &kp N0        &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &kp PERIOD        &kp LA(LS(MINUS))     &kp LS(LC(TAB))        &kp PAGE_DOWN         &kp MINUS              &kp LC(TAB)       &kp TILDE
+                                                              &kp TILDE             &kp SPACE                &kp LEFT_SHIFT    &kp SPACE             &kp LG(LS(LEFT))       &kp LS(LG(RIGHT))
             >;
         };
 
