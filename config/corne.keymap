@@ -94,10 +94,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE            &kp MINUS     &mt AMPERSAND N7          &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &kp PLUS          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LS(CAPS)          &kp NUMBER_1  &kp NUMBER_2              &kp NUMBER_3     &kp NUMBER_4             &kp N5            &kp NUMBER_6          &kp N7                 &kp N8                &kp N9                 &kp N0            &kp DOLLAR
-&kp NON_US_BACKSLASH  &kp N0        &mt EXCLAMATION NUMBER_1  &kp V            &kp V                    &kp PERIOD        &kp LA(LS(MINUS))     &kp LS(LC(TAB))        &kp PAGE_DOWN         &kp MINUS              &kp LC(TAB)       &kp TILDE
-                                                              &kp LEFT_GUI     &kp SPACE                &kp LEFT_SHIFT    &kp SPACE             &kp LG(LS(LEFT))       &kp LS(LG(RIGHT))
+&kp ESCAPE            &kp MINUS           &mt AMPERSAND N7          &mt ASTERISK N8     &mt LEFT_PARENTHESIS N9  &kp PLUS           &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS        &kp LEFT_BRACKET           &kp RIGHT_BRACKET
+&kp LS(CAPS)          &HML EXCL NUMBER_1  &HML AT NUMBER_2          &HML HASH NUMBER_3  &HML DOLLAR NUMBER_4     &HML PERCENT N5    &HML CARET NUMBER_6   &HML AMPERSAND N7      &HML ASTERISK N8      &HML KP_LEFT_PARENTHESIS N9  &HML RIGHT_PARENTHESIS N0  &kp DOLLAR
+&kp NON_US_BACKSLASH  &kp LEFT_SHIFT      &mt EXCLAMATION NUMBER_1  &kp V               &kp V                    &kp ENTER          &kp LA(LS(MINUS))     &kp LS(LC(TAB))        &kp PAGE_DOWN         &kp MINUS                    &kp LC(TAB)                &kp TILDE
+                                                                    &kp LEFT_GUI        &kp SPACE                &kp LEFT_SHIFT     &kp SPACE             &kp LG(LS(LEFT))       &kp LS(LG(RIGHT))
             >;
         };
 
